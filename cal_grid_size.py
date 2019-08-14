@@ -42,6 +42,3 @@ if __name__=="__main__":
   dataset = f.create_dataset("cal_dist205", data = dist205[:] ,dtype = 'f')
   dataset = f.create_dataset("cal_dist210", data = dist210[:] ,dtype = 'f')
   f.close()
-	
-
-	
