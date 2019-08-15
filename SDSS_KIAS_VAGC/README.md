@@ -12,7 +12,7 @@
 - Lower limit of redshift is z = 0.02, because regions with lower redshift seem underdense.
 - For easier treatment, sky is cut with -33.5 deg < eta < 36.5 deg ; -48 deg < lambda < 51 deg (see etaLambda.pdf for region cut).
 
-# kias_vagc_Mr21.0.hdf5
+## kias_vagc_Mr21.0.hdf5
 - Luminosity : M_r - 5 log h <= -21
 - Redshift : 0.02 <= z <= 0.165
 - Comoving distance : 59.84 Mpc/h <= d <= 477.52 Mpc/h
