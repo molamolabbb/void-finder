@@ -1,6 +1,5 @@
 # SDSS Volume-limited samples from KIAS-VAGC catalog 
--------------------------
-[[_TOC_]]
+
 ## Format of HDF5 files
 - RA, DEC : RA and DEC (degrees; 8-byte floating number)
 - redshift : redshift (8-byte floating number)
