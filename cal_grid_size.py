@@ -37,7 +37,7 @@ if __name__=="__main__":
   dist205 = cal_dist(pos205)
   dist210 = cal_dist(pos210)
 
-  f = h5py.File("output/cal_distance.h5py",'w')
+  f = h5py.File("output/cal_distance.hdf5",'w')
   dataset = f.create_dataset("cal_dist200", data = dist200[:] ,dtype = 'f')
   dataset = f.create_dataset("cal_dist205", data = dist205[:] ,dtype = 'f')
   dataset = f.create_dataset("cal_dist210", data = dist210[:] ,dtype = 'f')

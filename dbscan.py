@@ -36,7 +36,7 @@ def DBscan(STEP,dfData):
 
 
 if __name__=="__main__":
-  f = h5py.File("output/spline_kernel.h5py",'r')
+  f = h5py.File("output/spline_kernel.hdf5",'r')
 
   dfData200 = pd.DataFrame({'x' : f['sp_pos200'][:,0],
                             'y' : f['sp_pos200'][:,1],
@@ -53,7 +53,7 @@ if __name__=="__main__":
                             'z' : f['sp_pos210'][:,2],
                             'density': f['sp_density210'][:]})
 
-  cal_dist_f = h5py.File("output/cal_distance.h5py",'r')
+  cal_dist_f = h5py.File("output/cal_distance.hdf5",'r')
   
   dist200 = cal_dist_f['cal_dist200'][:]
   dist205 = cal_dist_f['cal_dist205'][:]

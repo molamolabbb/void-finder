@@ -33,7 +33,7 @@ if __name__=="__main__":
   pos210 = pos(f210)
 
   # read the file you calculated  
-  cal_dist_f = h5py.File("output/cal_distance.h5py",'r')
+  cal_dist_f = h5py.File("output/cal_distance.hdf5",'r')
 
   dist200 = cal_dist_f['cal_dist200'][:]
   dist205 = cal_dist_f['cal_dist205'][:]
@@ -74,7 +74,7 @@ if __name__=="__main__":
   sp200_density = [dens[1] for dens in sp200[:]]
 
   # wrote the spline kernel density
-  sp_f = h5py.File("output/spline_kernel.h5py",'w')
+  sp_f = h5py.File("output/spline_kernel.hdf5",'w')
   dataset = sp_f.create_dataset("sp_density200",data = sp200_density,dtype='f')
   dataset = sp_f.create_dataset("sp_density205",data = sp205_density,dtype='f')
   dataset = sp_f.create_dataset("sp_density210",data = sp210_density,dtype='f')
