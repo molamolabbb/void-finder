@@ -28,12 +28,12 @@ if __name__=="__main__":
   f210 = h5py.File('SDSS_KIAS_VAGC/kias_vagc_Mr21.0.hdf5','r')
 
   # galaxies position
-  pos200 = first.pos(f200)
-  pos205 = first.pos(f205)
-  pos210 = first.pos(f210)
+  pos200 = pos(f200)
+  pos205 = pos(f205)
+  pos210 = pos(f210)
 
   # read the file you calculated  
-  cal_dist_f = h5py.File("cal_distance.h5py",'r')
+  cal_dist_f = h5py.File("output/cal_distance.h5py",'r')
 
   dist200 = cal_dist_f['cal_dist200'][:]
   dist205 = cal_dist_f['cal_dist205'][:]
