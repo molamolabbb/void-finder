@@ -4,7 +4,6 @@ import math
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import pandas as pd
-from sklearn.cluster import DBSCAN
 import 1-cal_grid_size as first
 
 f200 = h5py.File('SDSS_KIAS_VAGC/kias_vagc_Mr20.0.hdf5','r')
